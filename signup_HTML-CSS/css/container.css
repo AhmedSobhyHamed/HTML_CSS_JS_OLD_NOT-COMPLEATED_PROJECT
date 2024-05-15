@@ -1,0 +1,504 @@
+:root {
+    /* container */
+    --ASH-container-padding:15px;
+    --ASH-containerfull-padding:0px;
+    --ASH-section-padding: 60px;
+    /* flex */
+    --ASH-flex-gap: 10px;
+}
+/* container with width and padding and auto margin */
+.ASH-container {
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--ASH-container-padding);
+    padding-right: var(--ASH-container-padding);
+    width: 100%;
+    position: relative;
+}
+@media (min-width:578px) {
+    .ASH-container {
+        width: 560px;
+    }
+}
+@media (min-width:768px) {
+    .ASH-container {
+        width: 750px;
+    }
+}
+@media (min-width:992px) {
+    .ASH-container {
+        width: 970px;
+    }
+}
+@media (min-width:1200px) {
+    .ASH-container {
+        width: 1170px;
+    }
+}
+
+/* container style full width */
+.ASH-container-full {
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--ASH-containerfull-padding);
+    padding-right: var(--ASH-containerfull-padding);
+    width: 100%;
+    position: relative;
+}
+
+/* add padding top bottom to the container */
+.ASH-section {
+    padding-top: var(--ASH-section-padding);
+    padding-bottom: var(--ASH-section-padding);
+}
+
+
+
+
+/*--------------- flex row ------------------*/
+/* flex row space between (center,start,end) */
+.ASH-flex-row-sp-c,
+.ASH-flex-row-sp-s,
+.ASH-flex-row-sp-e {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: var(--ASH-flex-gap);
+}
+.ASH-flex-row-sp-c {
+    align-items: center;
+}
+.ASH-flex-row-sp-s {
+    align-items: flex-start;
+}
+.ASH-flex-row-sp-e {
+    align-items: flex-end;
+}
+/* flex row space evenlly (center,start,end) */
+.ASH-flex-row-ev-c,
+.ASH-flex-row-ev-s,
+.ASH-flex-row-ev-e {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    gap: var(--ASH-flex-gap);
+}
+.ASH-flex-row-ev-c {
+    align-items: center;
+}
+.ASH-flex-row-ev-s {
+    align-items: flex-start;
+}
+.ASH-flex-row-ev-e {
+    align-items: flex-end;
+}
+/* flex row center (center,start,end) */
+.ASH-flex-row-c-c,
+.ASH-flex-row-c-s,
+.ASH-flex-row-c-e {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: var(--ASH-flex-gap);
+}
+.ASH-flex-row-c-c {
+    align-items: center;
+}
+.ASH-flex-row-c-s {
+    align-items: flex-start;
+}
+.ASH-flex-row-c-e {
+    align-items: flex-end;
+}
+
+
+/* flex row with changeable behavior */
+.ASH-flex-row-sp-c.ASH-changable-5,
+.ASH-flex-row-sp-s.ASH-changable-5,
+.ASH-flex-row-sp-e.ASH-changable-5,
+.ASH-flex-row-ev-c.ASH-changable-5,
+.ASH-flex-row-ev-s.ASH-changable-5,
+.ASH-flex-row-ev-e.ASH-changable-5,
+.ASH-flex-row-c-c.ASH-changable-5,
+.ASH-flex-row-c-s.ASH-changable-5,
+.ASH-flex-row-c-e.ASH-changable-5,
+.ASH-flex-row-sp-c.ASH-changable-7,
+.ASH-flex-row-sp-s.ASH-changable-7,
+.ASH-flex-row-sp-e.ASH-changable-7,
+.ASH-flex-row-ev-c.ASH-changable-7,
+.ASH-flex-row-ev-s.ASH-changable-7,
+.ASH-flex-row-ev-e.ASH-changable-7,
+.ASH-flex-row-c-c.ASH-changable-7,
+.ASH-flex-row-c-s.ASH-changable-7,
+.ASH-flex-row-c-e.ASH-changable-7,
+.ASH-flex-row-sp-c.ASH-changable-9,
+.ASH-flex-row-sp-s.ASH-changable-9,
+.ASH-flex-row-sp-e.ASH-changable-9,
+.ASH-flex-row-ev-c.ASH-changable-9,
+.ASH-flex-row-ev-s.ASH-changable-9,
+.ASH-flex-row-ev-e.ASH-changable-9,
+.ASH-flex-row-c-c.ASH-changable-9,
+.ASH-flex-row-c-s.ASH-changable-9,
+.ASH-flex-row-c-e.ASH-changable-9
+{
+    flex-direction: column;
+}
+/* change when 578px */
+@media (min-width: 578px) {
+    .ASH-flex-row-sp-c.ASH-changable-5,
+    .ASH-flex-row-sp-s.ASH-changable-5,
+    .ASH-flex-row-sp-e.ASH-changable-5,
+    .ASH-flex-row-ev-c.ASH-changable-5,
+    .ASH-flex-row-ev-s.ASH-changable-5,
+    .ASH-flex-row-ev-e.ASH-changable-5,
+    .ASH-flex-row-c-c.ASH-changable-5,
+    .ASH-flex-row-c-s.ASH-changable-5,
+    .ASH-flex-row-c-e.ASH-changable-5
+    {
+        flex-direction: row;
+    }
+}
+/* change when 768px */
+@media (min-width: 768px) {
+    .ASH-flex-row-sp-c.ASH-changable-7,
+    .ASH-flex-row-sp-s.ASH-changable-7,
+    .ASH-flex-row-sp-e.ASH-changable-7,
+    .ASH-flex-row-ev-c.ASH-changable-7,
+    .ASH-flex-row-ev-s.ASH-changable-7,
+    .ASH-flex-row-ev-e.ASH-changable-7,
+    .ASH-flex-row-c-c.ASH-changable-7,
+    .ASH-flex-row-c-s.ASH-changable-7,
+    .ASH-flex-row-c-e.ASH-changable-7
+    {
+        flex-direction: row;
+    }
+}
+/* change when 992px */
+@media (min-width: 992px) {
+    .ASH-flex-row-sp-c.ASH-changable-9,
+    .ASH-flex-row-sp-s.ASH-changable-9,
+    .ASH-flex-row-sp-e.ASH-changable-9,
+    .ASH-flex-row-ev-c.ASH-changable-9,
+    .ASH-flex-row-ev-s.ASH-changable-9,
+    .ASH-flex-row-ev-e.ASH-changable-9,
+    .ASH-flex-row-c-c.ASH-changable-9,
+    .ASH-flex-row-c-s.ASH-changable-9,
+    .ASH-flex-row-c-e.ASH-changable-9
+    {
+        flex-direction: row;
+    }
+}
+
+/* flex row with changeable behavior and center */
+.ASH-flex-row-sp-c.ASH-changable-c-5,
+.ASH-flex-row-sp-s.ASH-changable-c-5,
+.ASH-flex-row-sp-e.ASH-changable-c-5,
+.ASH-flex-row-ev-c.ASH-changable-c-5,
+.ASH-flex-row-ev-s.ASH-changable-c-5,
+.ASH-flex-row-ev-e.ASH-changable-c-5,
+.ASH-flex-row-c-c.ASH-changable-c-5,
+.ASH-flex-row-c-s.ASH-changable-c-5,
+.ASH-flex-row-c-e.ASH-changable-c-5,
+.ASH-flex-row-sp-c.ASH-changable-c-7,
+.ASH-flex-row-sp-s.ASH-changable-c-7,
+.ASH-flex-row-sp-e.ASH-changable-c-7,
+.ASH-flex-row-ev-c.ASH-changable-c-7,
+.ASH-flex-row-ev-s.ASH-changable-c-7,
+.ASH-flex-row-ev-e.ASH-changable-c-7,
+.ASH-flex-row-c-c.ASH-changable-c-7,
+.ASH-flex-row-c-s.ASH-changable-c-7,
+.ASH-flex-row-c-e.ASH-changable-c-7,
+.ASH-flex-row-sp-c.ASH-changable-c-9,
+.ASH-flex-row-sp-s.ASH-changable-c-9,
+.ASH-flex-row-sp-e.ASH-changable-c-9,
+.ASH-flex-row-ev-c.ASH-changable-c-9,
+.ASH-flex-row-ev-s.ASH-changable-c-9,
+.ASH-flex-row-ev-e.ASH-changable-c-9,
+.ASH-flex-row-c-c.ASH-changable-c-9,
+.ASH-flex-row-c-s.ASH-changable-c-9,
+.ASH-flex-row-c-e.ASH-changable-c-9
+{
+    flex-direction: column;
+    align-items: center;
+}
+/* change when 578px */
+@media (min-width: 578px) {
+    .ASH-flex-row-sp-c.ASH-changable-c-5,
+    .ASH-flex-row-sp-s.ASH-changable-c-5,
+    .ASH-flex-row-sp-e.ASH-changable-c-5,
+    .ASH-flex-row-ev-c.ASH-changable-c-5,
+    .ASH-flex-row-ev-s.ASH-changable-c-5,
+    .ASH-flex-row-ev-e.ASH-changable-c-5,
+    .ASH-flex-row-c-c.ASH-changable-c-5,
+    .ASH-flex-row-c-s.ASH-changable-c-5,
+    .ASH-flex-row-c-e.ASH-changable-c-5
+    {
+        flex-direction: row;
+    }
+    .ASH-flex-row-sp-s.ASH-changable-c-5,
+    .ASH-flex-row-ev-s.ASH-changable-c-5,
+    .ASH-flex-row-c-s.ASH-changable-c-5 {
+        align-items: flex-start;
+    }
+    .ASH-flex-row-sp-e.ASH-changable-c-5,
+    .ASH-flex-row-ev-e.ASH-changable-c-5,
+    .ASH-flex-row-c-e.ASH-changable-c-5 {
+        align-items: flex-end;
+    }
+}
+/* change when 768px */
+@media (min-width: 768px) {
+    .ASH-flex-row-sp-c.ASH-changable-c-7,
+    .ASH-flex-row-sp-s.ASH-changable-c-7,
+    .ASH-flex-row-sp-e.ASH-changable-c-7,
+    .ASH-flex-row-ev-c.ASH-changable-c-7,
+    .ASH-flex-row-ev-s.ASH-changable-c-7,
+    .ASH-flex-row-ev-e.ASH-changable-c-7,
+    .ASH-flex-row-c-c.ASH-changable-c-7,
+    .ASH-flex-row-c-s.ASH-changable-c-7,
+    .ASH-flex-row-c-e.ASH-changable-c-7
+    {
+        flex-direction: row;
+    }
+    .ASH-flex-row-sp-s.ASH-changable-c-7,
+    .ASH-flex-row-ev-s.ASH-changable-c-7,
+    .ASH-flex-row-c-s.ASH-changable-c-7 {
+        align-items: flex-start;
+    }
+    .ASH-flex-row-sp-e.ASH-changable-c-7,
+    .ASH-flex-row-ev-e.ASH-changable-c-7,
+    .ASH-flex-row-c-e.ASH-changable-c-7 {
+        align-items: flex-end;
+    }
+}
+/* change when 992px */
+@media (min-width: 992px) {
+    .ASH-flex-row-sp-c.ASH-changable-c-9,
+    .ASH-flex-row-sp-s.ASH-changable-c-9,
+    .ASH-flex-row-sp-e.ASH-changable-c-9,
+    .ASH-flex-row-ev-c.ASH-changable-c-9,
+    .ASH-flex-row-ev-s.ASH-changable-c-9,
+    .ASH-flex-row-ev-e.ASH-changable-c-9,
+    .ASH-flex-row-c-c.ASH-changable-c-9,
+    .ASH-flex-row-c-s.ASH-changable-c-9,
+    .ASH-flex-row-c-e.ASH-changable-c-9
+    {
+        flex-direction: row;
+    }
+    .ASH-flex-row-sp-s.ASH-changable-c-9,
+    .ASH-flex-row-ev-s.ASH-changable-c-9,
+    .ASH-flex-row-c-s.ASH-changable-c-9 {
+        align-items: flex-start;
+    }
+    .ASH-flex-row-sp-e.ASH-changable-c-9,
+    .ASH-flex-row-ev-e.ASH-changable-c-9,
+    .ASH-flex-row-c-e.ASH-changable-c-9 {
+        align-items: flex-end;
+    }
+}
+
+/*--------------- flex column ------------------*/
+/* flex column space between (center,start,end) */
+.ASH-flex-column-sp-c,
+.ASH-flex-column-sp-s,
+.ASH-flex-column-sp-e {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    gap: var(--ASH-flex-gap);
+}
+.ASH-flex-column-sp-c {
+    align-items: center;
+}
+.ASH-flex-column-sp-s {
+    align-items: flex-start;
+}
+.ASH-flex-column-sp-e {
+    align-items: flex-end;
+}
+
+/* flex column space evenlly (center,start,end) */
+.ASH-flex-column-ev-c,
+.ASH-flex-column-ev-s,
+.ASH-flex-column-ev-e {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    gap: var(--ASH-flex-gap);
+}
+.ASH-flex-column-ev-c {
+    align-items: center;
+}
+.ASH-flex-column-ev-s {
+    align-items: flex-start;
+}
+.ASH-flex-column-ev-e {
+    align-items: flex-end;
+}
+
+/* flex column center (center,start,end) */
+.ASH-flex-column-c-c,
+.ASH-flex-column-c-s,
+.ASH-flex-column-c-e {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: var(--ASH-flex-gap);
+}
+.ASH-flex-column-c-c {
+    align-items: center;
+}
+.ASH-flex-column-c-s {
+    align-items: flex-start;
+}
+.ASH-flex-column-c-e {
+    align-items: flex-end;
+}
+
+/* flex column with changeable to row behavior */
+.ASH-flex-column-sp-s.ASH-changable-r-5,
+.ASH-flex-column-sp-e.ASH-changable-r-5,
+.ASH-flex-column-sp-c.ASH-changable-r-5,
+.ASH-flex-column-sp-s.ASH-changable-r-7,
+.ASH-flex-column-sp-e.ASH-changable-r-7,
+.ASH-flex-column-sp-c.ASH-changable-r-7,
+.ASH-flex-column-sp-s.ASH-changable-r-9,
+.ASH-flex-column-sp-e.ASH-changable-r-9,
+.ASH-flex-column-sp-c.ASH-changable-r-9,
+.ASH-flex-column-ev-s.ASH-changable-r-5,
+.ASH-flex-column-ev-e.ASH-changable-r-5,
+.ASH-flex-column-ev-c.ASH-changable-r-5,
+.ASH-flex-column-ev-s.ASH-changable-r-7,
+.ASH-flex-column-ev-e.ASH-changable-r-7,
+.ASH-flex-column-ev-c.ASH-changable-r-7,
+.ASH-flex-column-ev-s.ASH-changable-r-9,
+.ASH-flex-column-ev-e.ASH-changable-r-9,
+.ASH-flex-column-ev-c.ASH-changable-r-9,
+.ASH-flex-column-c-s.ASH-changable-r-5,
+.ASH-flex-column-c-e.ASH-changable-r-5,
+.ASH-flex-column-c-c.ASH-changable-r-5,
+.ASH-flex-column-c-s.ASH-changable-r-7,
+.ASH-flex-column-c-e.ASH-changable-r-7,
+.ASH-flex-column-c-c.ASH-changable-r-7,
+.ASH-flex-column-c-s.ASH-changable-r-9,
+.ASH-flex-column-c-e.ASH-changable-r-9,
+.ASH-flex-column-c-c.ASH-changable-r-9
+{
+    flex-direction: row;
+}
+/* change when 578px */
+@media (min-width: 578px) {
+    .ASH-flex-column-sp-s.ASH-changable-r-5,
+    .ASH-flex-column-sp-e.ASH-changable-r-5,
+    .ASH-flex-column-sp-c.ASH-changable-r-5,
+    .ASH-flex-column-ev-s.ASH-changable-r-5,
+    .ASH-flex-column-ev-e.ASH-changable-r-5,
+    .ASH-flex-column-ev-c.ASH-changable-r-5,
+    .ASH-flex-column-c-s.ASH-changable-r-5,
+    .ASH-flex-column-c-e.ASH-changable-r-5,
+    .ASH-flex-column-c-c.ASH-changable-r-5
+    {
+        flex-direction: column;
+    }
+}
+/* change when 768px */
+@media (min-width: 768px) {
+    .ASH-flex-column-sp-s.ASH-changable-r-7,
+    .ASH-flex-column-sp-e.ASH-changable-r-7,
+    .ASH-flex-column-sp-c.ASH-changable-r-7,
+    .ASH-flex-column-ev-s.ASH-changable-r-7,
+    .ASH-flex-column-ev-e.ASH-changable-r-7,
+    .ASH-flex-column-ev-c.ASH-changable-r-7,
+    .ASH-flex-column-c-s.ASH-changable-r-7,
+    .ASH-flex-column-c-e.ASH-changable-r-7,
+    .ASH-flex-column-c-c.ASH-changable-r-7
+    {
+        flex-direction: column;
+    }
+}
+/* change when 992px */
+@media (min-width: 992px) {
+    .ASH-flex-column-sp-s.ASH-changable-r-9,
+    .ASH-flex-column-sp-e.ASH-changable-r-9,
+    .ASH-flex-column-sp-c.ASH-changable-r-9,
+    .ASH-flex-column-ev-s.ASH-changable-r-9,
+    .ASH-flex-column-ev-e.ASH-changable-r-9,
+    .ASH-flex-column-ev-c.ASH-changable-r-9,
+    .ASH-flex-column-c-s.ASH-changable-r-9,
+    .ASH-flex-column-c-e.ASH-changable-r-9,
+    .ASH-flex-column-c-c.ASH-changable-r-9
+    {
+        flex-direction: column;
+    }
+}
+
+
+/* flex column with changeable to center behavior */
+.ASH-flex-column-sp-s.ASH-changable-c-5,
+.ASH-flex-column-sp-e.ASH-changable-c-5,
+.ASH-flex-column-sp-s.ASH-changable-c-7,
+.ASH-flex-column-sp-e.ASH-changable-c-7,
+.ASH-flex-column-sp-s.ASH-changable-c-9,
+.ASH-flex-column-sp-e.ASH-changable-c-9,
+.ASH-flex-column-ev-s.ASH-changable-c-5,
+.ASH-flex-column-ev-e.ASH-changable-c-5,
+.ASH-flex-column-ev-s.ASH-changable-c-7,
+.ASH-flex-column-ev-e.ASH-changable-c-7,
+.ASH-flex-column-ev-s.ASH-changable-c-9,
+.ASH-flex-column-ev-e.ASH-changable-c-9,
+.ASH-flex-column-c-s.ASH-changable-c-5,
+.ASH-flex-column-c-e.ASH-changable-c-5,
+.ASH-flex-column-c-s.ASH-changable-c-7,
+.ASH-flex-column-c-e.ASH-changable-c-7,
+.ASH-flex-column-c-s.ASH-changable-c-9,
+.ASH-flex-column-c-e.ASH-changable-c-9
+{
+    align-items: center;
+}
+/* change when 578px */
+@media (min-width: 578px) {
+    .ASH-flex-column-sp-e.ASH-changable-c-5,
+    .ASH-flex-column-ev-e.ASH-changable-c-5,
+    .ASH-flex-column-c-e.ASH-changable-c-5
+    {
+        align-items: flex-end;
+    }
+    .ASH-flex-column-sp-s.ASH-changable-c-5,
+    .ASH-flex-column-ev-s.ASH-changable-c-5,
+    .ASH-flex-column-c-s.ASH-changable-c-5
+    {
+        align-items: flex-start;
+    }
+}
+/* change when 768px */
+@media (min-width: 768px) {
+    .ASH-flex-column-sp-e.ASH-changable-c-7,
+    .ASH-flex-column-ev-e.ASH-changable-c-7,
+    .ASH-flex-column-c-e.ASH-changable-c-7
+    {
+        align-items: flex-end;
+    }
+    .ASH-flex-column-sp-s.ASH-changable-c-7,
+    .ASH-flex-column-ev-s.ASH-changable-c-7,
+    .ASH-flex-column-c-s.ASH-changable-c-7
+    {
+        align-items: flex-start;
+    }
+}
+/* change when 992px */
+@media (min-width: 992px) {
+    .ASH-flex-column-sp-e.ASH-changable-c-9,
+    .ASH-flex-column-ev-e.ASH-changable-c-9,
+    .ASH-flex-column-c-e.ASH-changable-c-9
+    {
+        align-items: flex-end;
+    }
+    .ASH-flex-column-sp-s.ASH-changable-c-9,
+    .ASH-flex-column-ev-s.ASH-changable-c-9,
+    .ASH-flex-column-c-s.ASH-changable-c-9
+    {
+        align-items: flex-start;
+    }
+}

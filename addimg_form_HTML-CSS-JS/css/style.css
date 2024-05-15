@@ -1,0 +1,137 @@
+/* import */
+@import url("container.css");
+@import url("list.css");
+/* general */
+.shadowwall {
+    background-color: #f9f9f9;
+    box-shadow: 0 5px 5px 0 #0002;
+}
+/* nav */
+nav {
+    min-height: 80px;
+    box-shadow: 0 5px 5px 0 #0002;
+    background-color: var(--main-bkgnd);
+    position: sticky !important;
+    top: 1px;
+    z-index: 99;
+}
+.listpart {
+    font-size: 14px;
+    height: 78px;
+}
+.listpart li {
+    height: 100%;
+}
+.listpart li a {
+    color: var(--main-textcolor);
+    text-decoration: none;
+    width: 8em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 100%;
+    transition: 0.5s;
+}
+.listpart li a:hover {
+    font-size: 16px;
+    background-color: var(--alter-bkgnd);
+    border-bottom: 2px solid var(--main-textcolor);
+}
+
+@media (max-width:767px) {
+    .userpart {
+        width: 100%;
+    }
+}
+.userimg {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: var(--main-textcolor);
+}
+.userimg img {
+    width: 100%;
+}
+/* list */
+.ASH-list-ul-drop li,
+.ASH-list-ul-drop li a
+{
+    background-color: var(--main-bkgnd) !important;
+    color: var(--main-textcolor) !important;
+}
+/* drag drop */
+.dropimgbox {
+    border: 8px dashed var(--main-bkgnd);
+    width: 650px;
+    max-width: 95%;
+    margin: auto;
+    height: 650px;
+    background-color: #eee;
+    transition: 1s;
+    position: relative;
+}
+.dropimgbox i {
+    font-size: 150px;
+    color: var(--main-bkgnd);
+}
+.dropimgbox p {
+    font-size: 16px;
+    color: var(--main-textcolor);
+    text-align: start;
+}
+.dropimgbox.active {
+    border-style: solid;
+    border-color: var(--main-textcolor);
+}
+.dropimgbox.active p {
+    font-weight: bold;
+}
+.dropimgbox img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+.dropimgbox .close {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: var(--main-textcolor);
+    background-color: var(--alter-bkgnd);
+    border-radius: 6px;
+    font-size: 40px;
+    z-index: 5;
+}
+.formaddphoto input[type="submit"][value="save"] {
+    width: 650px;
+    max-width: 95%;
+    margin: auto;
+    padding: 10px 15px;
+    font-size: 20px;
+    color: var(--main-textcolor);
+    background-color: var(--main-bkgnd);
+    border: none;
+    margin-top: 20px;
+}
+.mssg {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #0004;
+}
+.mssg > div {
+    width: 300px;
+    height: 150px;
+    background-color: #eee;
+    border: 2px solid var(--main-textcolor);
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50% , -50%);
+}

@@ -1,0 +1,109 @@
+:root {
+    --ASH-list-text-color: #555;
+    --ASH-list-li-bkgnd: #f6f6f6;
+    --ASH-list-icon-width:30px;
+    --ASH-list-icon-padding:5px;
+    --ASH-list-transition-period:0.3s;
+    --ASH-list-ul-arow-height: 3px;
+    --ASH-list-drop-ul-min-width: 200px;
+    --ASH-list-li-padding: 10px;
+    --ASH-list-flex-li-width: 50px
+}
+/* list body*/
+.ASH-list.ASH-list-body {
+    position: relative;
+}
+
+/* list body > icon */
+/* icon , icon span  */
+.ASH-list-body .ASH-icon {
+    width: var(--ASH-list-icon-width);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: space-evenly;
+    padding: var(--ASH-list-icon-padding);
+    background-color: transparent;
+    border: none;
+    height: 80px;
+    padding: 25px 5px;
+}
+.ASH-list-body .ASH-icon span {
+    width: 100%;
+    height: 3px;
+    background-color: var(--ASH-list-text-color);
+    border-radius: 1.5px;
+}
+.ASH-list-body .ASH-icon span:not(:last-child) {
+    margin-bottom: var(--ASH-list-icon-padding);
+}
+.ASH-list-body .ASH-icon span.funky{
+    width: 60%;
+    transition: var(--ASH-list-transition-period);
+}
+.ASH-list-body .ASH-icon:hover span.funky {
+    width: 100%;
+}
+/* list body > ul */
+/* ASH-list-arw1tr  => set arow  */
+/* ASH-separate     => space betwen li */
+/* ASH-list-anim    => move on hover */
+.ASH-list-body .ASH-list-ul-drop {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: calc(-1 * var(--ASH-container-padding , 0));
+    top: calc(100% + var(--ASH-list-ul-arow-height));
+    min-width: 100vw;
+    display: none;
+    z-index: 10;
+}
+@media (min-width:578px) {
+    .ASH-list-body .ASH-list-ul-drop {
+        right: 0;
+        min-width: var(--ASH-list-drop-ul-min-width);
+    }
+}
+/* arow */
+.ASH-list-body .ASH-list-ul-drop.ASH-list-arw1tr::before {
+    content: "";
+    border: 15px solid;
+    border-color: transparent transparent var(--ASH-list-li-bkgnd) transparent;
+    position: absolute;
+    top: calc(var(--ASH-list-ul-arow-height) * -2);
+    right: var(--ASH-container-padding , 0);
+}
+@media (min-width:578px) {
+    .ASH-list-body .ASH-list-ul-drop.ASH-list-arw1tr::before {
+        right: 0;
+    }
+}
+/* default li */
+.ASH-list-body .ASH-list-ul-drop li {
+    background-color: var(--ASH-list-li-bkgnd);
+    padding: var(--ASH-list-li-padding);
+    transition: var(--ASH-list-transition-period);
+    color: var(--ASH-list-text-color);
+}
+.ASH-list-body .ASH-list-ul-drop li a,
+.ASH-list-body .ASH-list-ul-drop li {
+    text-decoration: none;
+    color: var(--ASH-list-text-color);
+    display: block;
+}
+
+/* separate li */
+.ASH-list-body .ASH-list-ul-drop.ASH-separate-li li {
+    margin-bottom: 3px;
+}
+/* animation on li */
+.ASH-list-body .ASH-list-ul-drop.ASH-list-anim li:hover {
+    padding-left: 20px;
+}
+/* display ul with hover */
+.ASH-list-body .ASH-icon:hover + .ASH-list-ul-drop ,
+.ASH-list-body .ASH-list-ul-drop:hover {
+    display: block;
+}

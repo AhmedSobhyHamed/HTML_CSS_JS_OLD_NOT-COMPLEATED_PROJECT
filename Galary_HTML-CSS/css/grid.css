@@ -1,0 +1,21 @@
+:root {
+    --ASH-grid-gap-size-r:2px;
+    --ASH-grid-gap-size-c:2px;
+    --ASH-grid-min-card-width: 300px;
+}
+
+
+.ASH-grid-container-static-gap {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(var(--ASH-grid-min-card-width) , 1fr));
+    row-gap: var(--ASH-grid-gap-size-r);
+    column-gap: var(--ASH-grid-gap-size-c);
+}
+
+
+.ASH-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, var(--ASH-grid-min-card-width));
+    justify-content: space-evenly;
+    row-gap: var(--ASH-grid-gap-size);
+}

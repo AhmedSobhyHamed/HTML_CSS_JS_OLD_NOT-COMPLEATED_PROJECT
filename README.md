@@ -29,11 +29,87 @@ I decided to code this front-end project to practice while I was learning PHP. H
 ## Features
 
 - Create responsive web pages.
+  <br>
+  Example:
+
+  ```css
+  @media (min-width: 992px) {
+    ...;
+    .ASH-flex-row-sp-s.ASH-changable-c-9,
+    .ASH-flex-row-ev-s.ASH-changable-c-9,
+    .ASH-flex-row-c-s.ASH-changable-c-9 {
+      align-items: flex-start;
+    }
+    ...;
+  }
+  ```
+
 - Use pre-made custom CSS libraries.
+  <br>
+  Example:
+
+  ```css
+  @import url("container.css");
+  @import url("list.css");
+  @import url("grid.css");
+  ```
+
 - Create a drag and drop area to upload a file.
+  <br>
+  Example:
+
+  ```js
+  // click
+  dragarea.addEventListener("click", areaclick);
+  // drag
+  dragarea.addEventListener("dragover", areaddragovr);
+  dragarea.addEventListener("dragleave", areaddragout);
+  // drop
+  dragarea.addEventListener("drop", areadrop);
+  ```
+
 - Create a dropdown menu.
-- Validate the file type.
-- Validate the file size.
+  <br>
+  Example:
+
+  ```html
+  <div class="userpart ASH-flex-row-sp-c">
+    <span class="username">ahmed sobhy hamed</span>
+    <span class="userimg"><img src="" alt="" /></span>
+    <span class="usermenu ASH-list ASH-list-body">
+      <i class="ASH-icon">
+        <span></span>
+        <span></span>
+        <span class="funky"></span>
+      </i>
+      <ul class="ASH-list-ul-drop ASH-separate-li ASH-list-anim">
+        <li><a href="">change profile photo</a></li>
+        <li><a href="">change user name</a></li>
+        <li><a href="">log to another account</a></li>
+        <li><a href="">sign out</a></li>
+      </ul>
+    </span>
+  </div>
+  ```
+
+- Validate the file type and file size.
+  <br>
+  Example:
+
+  ```js
+  let file = e.dataTransfer.files[0];
+  if (isImg(file.type) && file.size <= 1_000_000) {
+    let fr = new FileReader();
+    fr.readAsDataURL(file);
+    fr.onload = (_) => {
+      let furl = fr.result;
+      rightaction(dragarea, furl);
+      fileelement.files[0] = furl;
+    };
+  } else {
+    wrongaction(file, dragarea);
+  }
+  ```
 
   <!-- get start and how to run with the prerequisites mintion -->
 
@@ -57,6 +133,10 @@ git clone https://github.com/AhmedSobhyHamed/HTML_CSS_JS_OLD_NOT-COMPLEATED_PROJ
 In the
 [adding image page](https://ahmedsobhyhamed.github.io/HTML_CSS_JS_OLD_NOT-COMPLEATED_PROJECT/addimg_form_HTML-CSS-JS/addimg.html)
 You can drag and drop a file in the designated area or simply click on it to open the file browser widget.
+<br>
+**[see an example for user interaction.[video]](https://youtube.com)**
+<br>
+**[demonstration video for developer communit](https://www.youtube.com)**
 
 ## Technologies Used
 

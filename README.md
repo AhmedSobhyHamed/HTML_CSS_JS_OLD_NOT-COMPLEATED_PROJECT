@@ -1,6 +1,6 @@
 # HTML_CSS_JS_OLD_NOT-COMPLEATED_PROJECT
 
-a small front end project using HTML CSS JS to create a galary web site.
+A small front-end project using HTML, CSS, and JavaScript to create a gallery website.
 ![](repo-image/name.png)
 
 ## Table of Contents
@@ -18,9 +18,9 @@ a small front end project using HTML CSS JS to create a galary web site.
 
 ## Introduction
 
-this project is a galary to share a picture with your friends on the site.
+This project is a gallery to share pictures with your friends on the site.
 <br>
-i deside to code this front end to practiced by it when i was learning php, but in the end it doprecated, and i store it for future as maybe i contuniue develop it. and sort it in a shap of a separate pages and resort the libraries for every page.
+I decided to code this front-end project to practice while I was learning PHP. However, it was deprecated in the end, and I stored it for the future in case I decide to continue developing it. I organized it into separate pages and restructured the libraries for each page.
 
 **this is a collection of a pages that was a part of a not compleated niglicted project.**
 
@@ -28,40 +28,42 @@ i deside to code this front end to practiced by it when i was learning php, but 
 
 ## Features
 
-- create responsive web pages.
-- using a premaded custom CSS libraries.
-- create a dropdown area to upload a file.
-- validate a file type.
-- validate file with size.
+- Create responsive web pages.
+- Use pre-made custom CSS libraries.
+- Create a drag and drop area to upload a file.
+- Create a dropdown menu.
+- Validate the file type.
+- Validate the file size.
 
   <!-- get start and how to run with the prerequisites mintion -->
 
 ## Installation
 
-1. clone the project
+1. Clone the repository:
 
 ```sh
 git clone https://github.com/AhmedSobhyHamed/HTML_CSS_JS_OLD_NOT-COMPLEATED_PROJECT.git
 ```
 
-2. open index file in your browser.
+2. open index.html file in your browser.
 
   <!-- usage or how to interact with this technologies like api end points and what they do -->
 
 ## Usage
 
-**you can interacte with the oroject via this link.**
-[web page on github](https://ahmedsobhyhamed.github.io/HTML_CSS_JS_OLD_NOT-COMPLEATED_PROJECT/)
-in the
+**You can interact with the project via this link**
+[web page on github](https://ahmedsobhyhamed.github.io/HTML_CSS_JS_OLD_NOT-COMPLEATED_PROJECT/).
+<br>
+In the
 [adding image page](https://ahmedsobhyhamed.github.io/HTML_CSS_JS_OLD_NOT-COMPLEATED_PROJECT/addimg_form_HTML-CSS-JS/addimg.html)
-you can dropdown a file in the plus area or just click on it to open the file browser wadget.
+You can drag and drop a file in the designated area or simply click on it to open the file browser widget.
 
 ## Technologies Used
 
 - HTML 5.
-- pure CSS.
-- use font awesome CSS library.
-- vanilla JS.
+- Pure CSS.
+- Use font awesome CSS library.
+- Vanilla JS.
 
 Example:
 
@@ -96,7 +98,7 @@ This project is licensed under the MIT License - see the [LICENSE](/LICENSE) fil
 
 Created by [Ahmed Sobhy]:
 
-- email:[Ahmed] - [[ahmed.s.abdulaal@gmail.com](mailto:ahmed.s.abdulaal@gmail.com)]
+- email: [ahmed.s.abdulaal@gmail.com](mailto:ahmed.s.abdulaal@gmail.com)
 - linkedin: [Ahmed Sobhy](https://www.linkedin.com/in/ahmed-sobhy-b824b7201/)
   <br>
   feel free to contact me!

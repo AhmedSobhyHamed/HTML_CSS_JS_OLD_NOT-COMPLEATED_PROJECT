@@ -1,6 +1,7 @@
 # HTML_CSS_JS_OLD_NOT-COMPLEATED_PROJECT
 
 a small front end project using HTML CSS JS to create a galary web site.
+![](repo-image/name.png)
 
 ## Table of Contents
 
@@ -51,7 +52,9 @@ git clone https://github.com/AhmedSobhyHamed/HTML_CSS_JS_OLD_NOT-COMPLEATED_PROJ
 
 **you can interacte with the oroject via this link.**
 [web page on github](https://ahmedsobhyhamed.github.io/HTML_CSS_JS_OLD_NOT-COMPLEATED_PROJECT/)
-in the [adding image page]() you can dropdown a file in the plus area or just click on it to open the file browser wadget.
+in the
+[adding image page](https://ahmedsobhyhamed.github.io/HTML_CSS_JS_OLD_NOT-COMPLEATED_PROJECT/addimg_form_HTML-CSS-JS/addimg.html)
+you can dropdown a file in the plus area or just click on it to open the file browser wadget.
 
 ## Technologies Used
 
@@ -95,4 +98,5 @@ Created by [Ahmed Sobhy]:
 
 - email:[Ahmed] - [[ahmed.s.abdulaal@gmail.com](mailto:ahmed.s.abdulaal@gmail.com)]
 - linkedin: [Ahmed Sobhy](https://www.linkedin.com/in/ahmed-sobhy-b824b7201/)
+  <br>
   feel free to contact me!

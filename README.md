@@ -34,13 +34,13 @@ I decided to code this front-end project to practice while I was learning PHP. H
 
   ```css
   @media (min-width: 992px) {
-    ...;
+    ...
     .ASH-flex-row-sp-s.ASH-changable-c-9,
     .ASH-flex-row-ev-s.ASH-changable-c-9,
     .ASH-flex-row-c-s.ASH-changable-c-9 {
       align-items: flex-start;
     }
-    ...;
+    ...
   }
   ```
 

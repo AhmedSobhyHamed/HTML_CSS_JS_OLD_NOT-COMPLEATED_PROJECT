@@ -145,8 +145,6 @@ You can drag and drop a file in the designated area or simply click on it to ope
 - Use font awesome CSS library.
 - Vanilla JS.
 
-Example:
-
   <!-- about the project and a digram of how it work -->
 
 ## Project Structure

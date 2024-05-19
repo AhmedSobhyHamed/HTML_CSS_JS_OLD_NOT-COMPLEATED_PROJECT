@@ -7,7 +7,6 @@ A small front-end project using HTML, CSS, and JavaScript to create a gallery we
 
 - [Introduction](#introduction)
 - [Features](#features)
-- [Installation](#installation)
 - [Usage](#usage)
 - [Technologies Used](#technologies-used)
 - [Project Structure](#project-structure)
@@ -110,18 +109,6 @@ I decided to code this front-end project to practice while I was learning PHP. H
     wrongaction(file, dragarea);
   }
   ```
-
-  <!-- get start and how to run with the prerequisites mintion -->
-
-## Installation
-
-1. Clone the repository:
-
-```sh
-git clone https://github.com/AhmedSobhyHamed/HTML_CSS_JS_OLD_NOT-COMPLEATED_PROJECT.git
-```
-
-2. open index.html file in your browser.
 
   <!-- usage or how to interact with this technologies like api end points and what they do -->
 
